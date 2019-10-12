@@ -5,6 +5,9 @@ import { css } from "@emotion/core"
 const StyledSection = styled.section`
   padding-top: 3rem;
   padding-bottom: 3rem;
+  &:first-of-type {
+    padding-top: 6rem;
+  }
 `
 
 const Section: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
