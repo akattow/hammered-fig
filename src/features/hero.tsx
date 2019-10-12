@@ -1,10 +1,9 @@
 import React from "react"
-import styled, { setPadding, Theme } from "./theme"
-import { Link } from "gatsby"
-import Logo from "./logo"
+import styled, { setPadding, Theme } from "../utilities/theme"
+import Logo from "../components/logo-icon"
 import css from "@emotion/css"
-import Name from "./name"
-import Footer from "./footer"
+import Name from "../components/logo-name"
+import Footer from "../components/footer"
 import { useTheme } from "emotion-theming"
 
 const StyledHero = styled.section`
@@ -29,13 +28,15 @@ const Hero: React.FC = ({ children }) => {
           }
         `}
       >
-        <div
+        <Logo
           css={css`
-            margin: 1rem 15vw;
+            height: 100%;
+            width: 100%;
+            max-height: 50vh;
+            max-width: 50vh;
+            margin: 0 auto;
           `}
-        >
-          <Logo />
-        </div>
+        />
         <Name />
       </div>
     </StyledHero>

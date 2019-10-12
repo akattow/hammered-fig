@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/core"
 import Img from "gatsby-image"
 import useInstagram from "../hooks/useInstagram"
-import { Theme } from "./theme"
+import { Theme } from "../utilities/theme"
 import { useTheme } from "emotion-theming"
 
 const Insta = () => {

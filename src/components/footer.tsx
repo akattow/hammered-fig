@@ -1,5 +1,5 @@
 import React from "react"
-import { setPadding } from "./theme"
+import { setPadding } from "../utilities/theme"
 
 const Footer = () => {
   return (

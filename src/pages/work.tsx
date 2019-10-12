@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../utilities/layout"
+import SEO from "../utilities/seo"
 import Section from "../components/section"
-import Insta from "../components/insta"
+import Insta from "../features/insta"
 
 const Work = () => (
   <Layout>

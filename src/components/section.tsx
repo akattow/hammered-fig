@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { setPadding } from "./theme"
+import styled, { setPadding } from "../utilities/theme"
 import { css } from "@emotion/core"
 
 const StyledSection = styled.section`

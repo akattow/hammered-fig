@@ -1,10 +1,10 @@
 import React from "react"
-import Header from "./header"
+import Header from "../components/header"
 import useSiteMetadata from "../hooks/useSiteMetadata"
 import GlobalStyles from "./global-styles"
 import { ThemeProvider } from "emotion-theming"
 import { theme } from "./theme"
-import Footer from "./footer"
+import Footer from "../components/footer"
 
 const Layout: React.FC = ({ children }) => {
   const { title } = useSiteMetadata()

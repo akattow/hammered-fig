@@ -1,13 +1,11 @@
-import React from "react"
+import React, { HTMLAttributes } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Name = () => {
+const Logo: React.FC<HTMLAttributes<HTMLDivElement>> = ({ className }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(
-        relativePath: { eq: "hammered-fig-text-alt.png" }
-      ) {
+      placeholderImage: file(relativePath: { eq: "hammered-fig.png" }) {
         childImageSharp {
           fluid(maxWidth: 800, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -20,9 +18,10 @@ const Name = () => {
   return (
     <Img
       fluid={data.placeholderImage.childImageSharp.fluid}
-      alt="hammered fig"
+      alt="logo, a stylized fig"
+      css={className}
     />
   )
 }
 
-export default Name
+export default Logo

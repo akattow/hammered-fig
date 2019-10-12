@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
 import React from "react"
 import { useTheme } from "emotion-theming"
-import { Theme, setPadding } from "./theme"
+import { Theme, setPadding } from "../utilities/theme"
 import css from "@emotion/css"
-import styled from "./theme"
-import Logo from "./logo"
+import styled from "../utilities/theme"
+import Logo from "./logo-icon"
 
 const StyledHeader = styled.header`
   display: flex;

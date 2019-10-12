@@ -1,13 +1,13 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Hero from "../components/hero"
+import Layout from "../utilities/layout"
+import SEO from "../utilities/seo"
+import Hero from "../features/hero"
 import css from "@emotion/css"
 import { Link } from "gatsby"
 import Section from "../components/section"
 import { useTheme } from "emotion-theming"
-import { Theme } from "../components/theme"
+import { Theme } from "../utilities/theme"
 
 const IndexPage = () => (
   <Layout>
