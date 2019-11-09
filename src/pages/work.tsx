@@ -6,7 +6,7 @@ import Section from "../components/section"
 import Insta from "../features/insta"
 
 const Work = () => (
-  <Layout>
+  <Layout reverse>
     <SEO pageTitle="Work" />
     <Section>
       <h1>Our Work</h1>

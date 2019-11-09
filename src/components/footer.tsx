@@ -1,14 +1,19 @@
 import React from "react"
-import { setPadding } from "../utilities/theme"
+import { layoutPadding } from "../utilities/layout"
+import styled from "../utilities/theme"
 
 const Footer = () => {
   return (
-    <footer css={setPadding}>
-      © {new Date().getFullYear()}, Built with
+    <StyledFooter>
+      © {new Date().getFullYear()}, Built by
       {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
-    </footer>
+      <a href="https://www.kattow.com">Kat Tow</a>
+    </StyledFooter>
   )
 }
 
 export default Footer
+
+const StyledFooter = styled.footer`
+  ${props => layoutPadding(props.theme)};
+`

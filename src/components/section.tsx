@@ -1,29 +1,16 @@
 import React from "react"
-import styled, { setPadding } from "../utilities/theme"
-import { css } from "@emotion/core"
+import styled from "../utilities/theme"
+import { layoutPadding } from "../utilities/layout"
 
 const StyledSection = styled.section`
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  &:first-of-type {
-    padding-top: 6rem;
-  }
+  ${props => layoutPadding(props.theme)};
 `
 
 const Section: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   children,
   className,
 }) => {
-  return (
-    <StyledSection
-      className={className}
-      css={css`
-        ${setPadding};
-      `}
-    >
-      {children}
-    </StyledSection>
-  )
+  return <StyledSection className={className}>{children}</StyledSection>
 }
 
 export default Section
