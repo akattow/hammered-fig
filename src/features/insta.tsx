@@ -19,7 +19,7 @@ const Insta = () => {
               fluid={photo.fluid}
               alt={photo.caption}
               style={{
-                width: `100%`,
+                "width": `100%`,
                 "*": {
                   marginTop: 0,
                 },
@@ -61,6 +61,9 @@ const InstaLink = styled.a`
     max-width: calc(33% - 1rem);
   }
   transition: 200ms linear;
+  * {
+    margin-top: 0;
+  }
 
   :focus,
   :hover {
