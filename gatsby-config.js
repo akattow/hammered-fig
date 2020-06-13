@@ -3,6 +3,8 @@ module.exports = {
     title: `Hammered Fig Designs`,
     description: `A traditional carpentry shop creating hand-crafted and custom pieces.`,
     author: `@akattow`,
+    siteUrl: `https://www.hammeredfig.com`,
+    instagram: `hammeredfig`,
   },
   plugins: [
     `gatsby-plugin-emotion`,
